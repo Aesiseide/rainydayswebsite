@@ -3,7 +3,7 @@
   <head>
     <title>Rainy Days Website</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style-contact.css">
     <script src="https://kit.fontawesome.com/44bf2ebfb0.js" crossorigin="anonymous"></script>
   </head>
   <body>
@@ -15,7 +15,7 @@
         <ul>
           <li><a href="index.html">HOME</a></li>
           <li><a href="about.html">ABOUT</a></li>
-          <li><a href="contact.html">CONTACT</a></li>
+          <li><a href="contact.html" id="contact-yellow">CONTACT</a></li>
           <li><a href="shop.html">SHOP</a></li>
           <li> <a href="shopping-cart.html"><i class="fas fa-shopping-cart"></i></a></li>
           <li><i class="fas fa-search"></i></li>
@@ -23,18 +23,43 @@
       </nav>
     </div>
 
-        <div class="hero-main-picture">
-          <h1 id="hero-text">Pushing the Comfort Zone</h1><a href="#" class="hero-btn">SHOP NOW</a></div>
+        <div class="contact-hero-main-picture">
+          <h1 id="contact-hero-text">Contact</h1></div>
 
         <div class="three">
-          <a href="women-shop.html" class="wmw-home-btn">WOMAN</a>
+          <h2 id="second-headline">Get in Touch</h2>
+          <form action="#">
+            <label for="fname"></label>
+            <input type="text" id="fname" name="firstname" placeholder="Your email">
+            <label for="subject"></label>
+    <textarea id="subject" name="subject" placeholder="Your message"></textarea>
+    
+
+    <input type="submit" value="SUBMIT" id="submit-contact-btn">
+  </form>
         </div>
 
-        <div class="four"><a href="man-shop.html" class="man-home-btn">MEN</a></div>
+        <div class="four">  
+            <ul>
+              <p id="contact-icon-text">Address</p>
+            <li> 
+              <i class="fas fa-map-marker-alt"></i><p id="black-contact-text">203 Fake St.Mountain View, San Francisco, California, USA</p>
+            </li>
+            <p id="contact-icon-text">Support</p>
+            <li>
+              <i class="far fa-envelope"></i><p id="black-contact-text">Rainydays.domain@fake.com</p>
+            </li>
+            <p id="contact-icon-text">Call us</p>
+            <li>
+              <i class="fas fa-phone-alt"></i><p id="black-contact-text">+9 999 666 999</p>
+            </li>
+          </ul>
+     
+        </div>
 
-        <div class="five"><h2 id="third-img-headline">FOR YOUR NEXT JOURNEY</h2>
+        <div class="five">
 
-          <p id="third-img-sub">Comfortable and durable jackets</p>
+          
         </div>
 
         <div class="six">

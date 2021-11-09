@@ -58,39 +58,25 @@ padding: 10px;
 }
 
 
-#hero-text {
-
-color: #fff;
-font-size: 70px;
+#women-head-text {
+color: #0c0c0c;
+font-size: 50px;
 font-family: 'Raleway', sans-serif;
-text-align: center;
-position: relative;
-top: 50%;
-}
-
-.hero-btn {
-
-  color: #0c0c0c;
-  background: #fff;
-  padding: 25px 25px;
-  border-radius: 0px;
-  text-decoration: none;
-  font-family: 'Raleway', sans-serif;
-  font-size: 50px;
-  text-align: center;
-  position: relative;
-  top: 52%;
+margin-left: 270px;
+position: absolute;
+top: 80px;
 
 }
 
-.hero-btn:hover {
-  background-color: #FEDB60;
+#shop-yellow {
+  color: #FEDB60;
 }
+
 
 .wrapper {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 1fr 7fr 2fr 6.5fr 8fr 3fr;
+  grid-template-rows: 1fr 6fr 6fr 6fr 2fr 3fr;
   row-gap: 35px;
    
 }
@@ -112,64 +98,98 @@ left: 300px;
 
 .hero-main-picture {
   margin-top: -35px;
-  margin-left: 0%;
-  margin-right: 0%;
   grid-column: 1 / 5;
-  grid-row: 2 / 4;
-  background-image: url(/images/hero_img_homepage.jpg);
-  text-align: center;
-  background-repeat: no-repeat;  
+  grid-row: 2;
+background-color: #FEDB60;
   width: 100%;
   height: auto;
-  background-attachment: absolute;
-  background-position: center;
-  background-size: cover;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.product-images {
+width: 304px;
+height: 392px;
+position: relative;
+left: 270px;
+margin-top: 100px;
+margin-right: -130px;
+}
+
+
+.product-name {
+position: relative;
+font-family: 'Roboto Slab', serif;
+font-weight: 700;
+top: 470px;
+left: 100px;
+white-space: nowrap;
+
+
+
+
+
+}
+
+.product-price {
+position: relative;
+font-family: 'Roboto', sans-serif;
+font-weight: normal;
+font-size: 20px;
+top: 500px;
+right: 30px;
+
+
+
 }
 
 .three {
-  grid-column: 2 / 3;
-  grid-row: 4 / 4;
+  margin-top: -35px;
+ 
+  grid-column: 1 / 5;
+  grid-row: 3;
   width: 100%;
   height: auto;
-  background-image: url(/images/jacketwomanred.jpg);
-  background-repeat: no-repeat;
-  background-attachment: absolute;
-  background-position: center;
+ background-color: #F34848;
   background-size: cover;
   position: relative;
-  right: 5%;
-
+  display: flex;
   
 }
 
 
 .four {
-  grid-column: 3 / 4;
-  grid-row: 4 / 4;
+    margin-top: -35px;
+  grid-column: 1 / 5;
+  grid-row: 4;
   width: 100%;
   height: auto;
-  background-image: url(/images/snowboard-man.jpg);
-  background-repeat: no-repeat;
-  background-attachment: absolute;
-  background-position: center;
-  background-size: cover;
+background-color: aqua;
   position: relative;
-  left: 5%;
-  background-color: #0c0c0c;
- 
+  display: flex;
  
 }
 
-.five {
+.load-more-btn {
+ padding: 16px 20px;
+ background-color: rgb(71, 71, 71); 
+ position: absolute;
+ left: 45%;
+ margin-top: 10px;
+ border-radius: 4px;
+ color: #fff;
+ font-family: 'Roboto', sans-serif;
+ text-decoration: none;
+ font-weight: bold;
+}
+
+.five{
   grid-column: 1 / 5;
   grid-row: 5;
-  background-image: url(/images/pplwith.png);
-  background-repeat: no-repeat;
+  background-color: #0c0c0c;
   width: 100%;
   height: auto;
-  background-attachment: relative;
-  background-position: center;
-  background-size: contain;
+  text-align: center;
 }
 
 .six {
@@ -192,83 +212,6 @@ left: 300px;
  
 }
   
-  .wmw-home-btn {
-    
-  text-decoration: none;
-  color: #0c0c0c;
-  background: #fff;
-  padding: 25px 25px;
-  border-radius: 0px;
-  font-family: 'Raleway', sans-serif;
-  font-size: 50px;
-  display: block;
-  text-align: center;
-  top: 60%;
-  position: relative;
-  margin-right: 20%;
-  margin-left: 20%;
-  }
-
-  .wmw-home-btn:hover {
-    background-color: #FEDB60;
-  }
-
-  .man-home-btn {
-  text-decoration: none;
-  color: #0c0c0c;
-  background: #fff;
-  padding: 25px 25px;
-  border-radius: 0px;
-  font-family: 'Raleway', sans-serif;
-  font-size: 50px;
-  text-align: center;
-  top: 65%;
-  left: 12%;
-  position: relative;
-  margin-right: 20%;
-  margin-left: 20%;
-
-  }
-
- .man-home-btn:hover {
-   background-color: #FEDB60;
- }
-  
-  
-  #third-img-headline {
-
-  text-decoration: none;
-  color: #0c0c0c;
-  background: #fff;
-  padding: 5px 5px;
-  border-radius: 0px;
-  font-family: 'Roboto Slab', serif;
-  font-size: 80px;
-  position: relative;
-  text-align: center;
-  margin-left: 20%;
-  margin-right: 20%;
-  right: 100px;
-  top: 200px;
-  }
-
-  #third-img-sub {
-    
-  text-decoration: none;
-  color: #0c0c0c;
-  background: #fff;
-  padding: 25px 25px;
-  border-radius: 0px;
-  font-family: 'Raleway', sans-serif;
-  font-size: 45px;
-  position: relative;
-  text-align: center;
-  margin-left: 20%;
-  margin-right: 40%;
-  right: 100px;
-  top: 110px;
- 
-  }
 
   .copyright-text {
     color: rgb(53, 53, 53);
