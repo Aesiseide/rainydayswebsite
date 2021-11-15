@@ -5,10 +5,11 @@
 
   
 body,html {
+
   padding: 0%;
   margin: 0%;
   box-sizing: border-box;
-  max-width: 100%;
+    max-width: 100%;
    }
  
 img {
@@ -17,25 +18,18 @@ img {
   height: auto;
 }
 
-div > ul {
-  display: flex;
-  justify-content: right;
-  margin-right: 30px;
-  margin-top: 0px;
-}
-
-div > ul > li {
-  display: inline-block; 
-  font-family: 'Raleway', sans-serif;
-  font-size: 40px;
-}
-
-div > ul > li > a {
-  padding-left: 30px;
-}
-
 .menu-wrap .toggler {
   opacity: 0;
+}
+
+
+nav ul li {
+  
+font-family: 'Raleway', sans-serif;
+font-weight: 500;
+font-size: 30px;
+padding: 10px;
+
 }
 
  ul li a {
@@ -48,7 +42,11 @@ div > ul > li > a {
    list-style-type: none;
  }
  
- 
+ nav ul li {
+  position: relative;
+  left: 60%;
+ }
+
  li a:hover {
    color: #FEDB60;
  }
@@ -88,11 +86,6 @@ top: 80px;
   grid-row: 1;
   background-color: #0c0c0c;
 }
-
-.toggler {
-  opacity: 0;
-}
-
 
 .logo-home {
  margin-top: 5px;
@@ -192,6 +185,8 @@ background-color: aqua;
   grid-row: 6;
   background-color: #0c0c0c;
   position: relative;
+  
+
 }
   
 .seven {
@@ -204,60 +199,59 @@ background-color: aqua;
 }
   
 
-.copyright-text {
-  color: rgb(53, 53, 53);
-  font-family: 'Roboto', sans-serif;
-  text-align: center;
-  position: absolute;
-  right: 400px;
-  top: 210px;
-  z-index: 100;
-  
-}
+  .copyright-text {
+    color: rgb(53, 53, 53);
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    position: absolute;
+    right: 400px;
+    top: 210px;
+    z-index: 100;
+    
+  }
 
-.fab {
-color: #fff;
-text-decoration: none;
-list-style-type: none;
-padding-left: 0px;
-position: relative;
-left: 0%;
-top: 0px;
-
+ .fab {
+  color: #fff;
+  text-decoration: none;
+  list-style-type: none;
+  padding-left: 30px;
+  position: relative;
+  left: 400px;
+  top: 50px;
 }
 
 #newsletter-text {
-position: relative;
-font-family: 'Roboto', sans-serif;
-font-size: 30px;
-color: #fff;
-left: 470px;
+  position: relative;
+  font-family: 'Roboto', sans-serif;
+  font-size: 30px;
+  color: #fff;
+  left: 470px;
 }
 
 #inlined-footer-icons {
   display: flex;
   padding: 20px 20px 20px 0;
-  margin-left: 430px;
-  position: absolute;
+  margin-left: 50px;
+  position: relative;
   font-size: 30px; 
-  bottom: 10px;
+  bottom: 30px;
 }
 
 .fa-arrow-up {
-
-position: absolute;
-color: #fff;
-font-size: 80px;
-left: 100px;
-top: 100px;
+  display: none;
+  position: absolute;
+  color: #fff;
+  font-size: 80px;
+  left: 100px;
+  top: 100px;
 }
 
 #email {
-border-style: solid;
-background: none;
-position: relative;
-left: 470px;
-font-size: 20px;
+  border-style: solid;
+  background: none;
+  position: relative;
+  left: 470px;
+  font-size: 20px;
 }
 
 input {
@@ -269,83 +263,36 @@ border-style: none;
 }
 
 #contact-info-text {
-font-family: 'Roboto', sans-serif;
-font-size: 30px;
-position: relative;
-left:140px;
-margin-right: 400px; 
+  font-family: 'Roboto', sans-serif;
+  font-size: 30px;
+  position: absolute;
+  left: 120px; 
 }
 
 .fa-map-marker-alt,.fa-phone-alt,.fa-envelope {
-color: #fff;
-font-size: 30px;
-position: relative;
-margin-bottom: 20px;
-left: -45px;
-top: 80px;
-list-style-type: none;
-text-decoration: none;
+  color: #fff;
+  font-size: 30px;
+  position: relative;
+  margin-bottom: 20px;
+  left: 80px;
+  top: 80px;
+  list-style-type: none;
+  text-decoration: none;
 }
 
- .fa-envelope {
-   position: relative;
-   left: -45px;
-   top: 70px;
- }
-
 .fa-map-marker-alt:hover, .fa-phone-alt:hover, .fa-envelope:hover {
-color: white;
+  color: white;
 }
 
 #contact-aligned-text {
-position: relative;
-left: 0px;
-font-size: 20px; 
-}
-
-#fake{
-position: relative;
-top: -100px;
-left: 150px;
-}
-
-#domain{
-position: relative;
-top: -30px;
-left: -330px;
-}
-
-#phonenumb{
-position: relative;
-top: 10px;
-left: -600px;
+  position: absolute;
+  left: 180px;
+  margin-top: 40px;
 }
 
 
   @media only screen and (max-width: 550px) {
-
-    #fake{
-      position: relative;
-      top: 0px;
-      left: 0px;
-    }
   
-    #domain{
-      position: relative;
-      top: 0px;
-      left: 0px;
-    }
-  
-    #phonenumb{
-      position: relative;
-      top: 0px;
-      left: 0px;
-    }
-  
-  
-  
-
-
 
     /* Hamburger Menu */
     .menu-wrap {
@@ -485,19 +432,6 @@ padding: 1rem;
   transition: color 0.4s ease;
 }
 
-/* Vertical aligned navbar */
-div > ul > li {
-  display: block; 
-}
-
-div > ul {
-  display: block;
-  justify-content: none;
-  margin: 0px;
-  padding: 0px;
-}
-
-
 /* Grid */
 .wrapper {
 grid-template-columns: 1fr;
@@ -510,7 +444,7 @@ grid-template-areas:
   "four"
   "five"
   "six"
-  "seven"
+  "seven";
 }
 
 .navbar {
@@ -674,131 +608,117 @@ grid-template-areas:
 
  
 /* Footer section */
-.copyright-text {
+
+ .copyright-text {
   color: #fff;
   font-family: 'Roboto', sans-serif;
   text-align: center;
   position: absolute;
   right: 140px;
-  top: 500px;
+  top: 610px;
   font-size: 15px;
-  }
-  
-  .fab {
-  color: #fff;
-  text-decoration: none;
-  list-style-type: none;
-  padding-left: 0px;
-  padding-right: 65px;
-  padding-top: 10px;
-  position: relative;
-  left: 0px;
-  top: 0px;
-  font-size: 60px;
-  
-  }
-  
-  #newsletter-text {
-  position: relative;
-  font-family: 'Roboto', sans-serif;
-  font-size: 30px;
-  color: #fff;
-  left: 0px;
-  padding-top: 20px;
-  }
-  
-  #inlined-footer-icons {
-  display: flex;
-  margin-left: 0px;
-  position: relative;
-  font-size: 30px; 
-  bottom: 0px;
-  margin: 0%;
-  padding: 0px 0px 0px 0px;
-  
-  }
-  
-  .fa-arrow-up {
+}
+
+.fab {
+color: #fff;
+text-decoration: none;
+list-style-type: none;
+padding-left: 40px;
+position: relative;
+left: 0px;
+top: -30px;
+margin-left: 45px;
+font-size: 50px;
+
+}
+
+#newsletter-text {
+position: relative;
+font-family: 'Roboto', sans-serif;
+font-size: 30px;
+color: #fff;
+left: 0px;
+}
+
+#inlined-footer-icons {
+display: flex;
+margin-left: 0px;
+position: relative;
+font-size: 30px; 
+bottom: 0px;
+}
+
+.fa-arrow-up {
+    display: none;
   display: none;
-  position: relative;
-  color: #fff;
-  font-size: 80px;
-  left: 0px;
-  top: 0px;
-  }
-  
-  #email {
-  border-style: solid;
-  background: none;
-  position: relative;
-  left: 0px;
-  font-size: 20px;
-  top: -20px;
-  }
-  
-  input {
-  position: relative;
-  left: 0px;
-  font-size: 20px;
-  background-color: #F34848;
-  border-style: none;
-  top: -20px;
-  }
-  
-  #contact-info-text {
+position: relative;
+color: #fff;
+font-size: 80px;
+left: 0px;
+top: 0px;
+}
+
+#email {
+border-style: solid;
+background: none;
+position: relative;
+left: 0px;
+font-size: 20px;
+top: -20px;
+}
+
+input {
+position: relative;
+left: 0px;
+font-size: 20px;
+background-color: #F34848;
+border-style: none;
+top: -20px;
+}
+
+#contact-info-text {
   display: none;
-  font-family: 'Roboto', sans-serif;
-  font-size: 30px;
-  position: absolute;
-  left: 0px;
-  }
-  
-  .fa-map-marker-alt,.fa-phone-alt,.fa-envelope {
-  color: #fff;
-  font-size: 50px;
-  position: relative;
-  margin-bottom: 0px;
-  left: 50px;
-  top: -20px;
-  list-style-type: none;
-  text-decoration: none;
-  padding-top: 10px;
-  margin-top: 20px;
-  
-  }
-  
-  .fa-envelope {
-    position: relative;
-    margin-left: 20px;
-    margin-top: -10px;
-  }
-  
-  .fa-map-marker-alt:hover, .fa-phone-alt:hover, .fa-envelope:hover {
-  color: white;
-  }
-  
-  #contact-aligned-text {
-  position: relative;
-  left: 0px;
-  font-size: 20px;
-  top: -30px;
-  padding: 0px;
-  padding-top: -20px;
-  margin-left: 140px;
-  margin-top: -30px;
-  margin-right: 50px;
-  
-  
-  }
-  
-  #social-media-text-phone {
-  font-family: 'Roboto', sans-serif;
-  font-size: 30px;
-  color: #fff;
-  position: relative;
-  top: 0px;
-  }
-  
+font-family: 'Roboto', sans-serif;
+font-size: 30px;
+position: absolute;
+left: 0px;
+}
+
+.fa-map-marker-alt,.fa-phone-alt,.fa-envelope {
+color: #fff;
+font-size: 50px;
+position: relative;
+margin-bottom: 20px;
+left: 40px;
+top: 5px;
+list-style-type: none;
+text-decoration: none;
+}
+
+.fa-map-marker-alt:hover, .fa-phone-alt:hover, .fa-envelope:hover {
+color: white;
+}
+
+#contact-aligned-text {
+position: relative;
+left: 0px;
+font-size: 20px;
+
+top: -25px;
+padding: 0px;
+margin-left: 100px;
+margin-top: -30px;
+margin-right: 50px;
+
+}
+
+#social-media-text-phone {
+font-family: 'Roboto', sans-serif;
+font-size: 30px;
+color: #fff;
+position: relative;
+top: 0px;
+}
 
 
 }
